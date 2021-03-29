@@ -1,2 +1,3 @@
-# vulcan
-BCIT front-end project for FWD
+# Front End Group Project
+This is a Front End group project for the Front End Project course.
+
