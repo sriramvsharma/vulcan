@@ -15,6 +15,15 @@
     flex-wrap: wrap;
 }
 
+@mixin flex-layout-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 //centering elements in a flex container
 @mixin flex-center {
     display: flex;
