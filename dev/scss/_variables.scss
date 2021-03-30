@@ -4,16 +4,17 @@ $line-height: 1.4;
 $heading-size: 2rem;
 $text-size: 1.5rem;
 
+//padding
+$padding: 1rem;
 
 //colors
 $colors: (
-    heading-color-1: #fff,
-    heading-color-2: #244A64,
-    heading-color-3: #4F4E4E,
-    text-color: #000,
-    bg-color-1: #439BD6,
-    bg-color-2: #BDDCEF,
-    form-input-color: #BBBBBB,
+    heading-1: #fff,
+    heading-2: #244A64,
+    heading-3: #504F4F,
+    text: #000,
+    bg-1: #439BD6,
+    bg-2: #BDDCEF,
 
 );
 
