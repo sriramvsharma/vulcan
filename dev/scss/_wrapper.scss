@@ -1,5 +1,5 @@
 #wrapper {
-    max-width: 90%;
-    background-color: map-get($colors, wrapper-bg-color);
+    max-width: 100%;
+    // background-color: map-get($colors, wrapper-bg-color);
     @include margin-center;
 }

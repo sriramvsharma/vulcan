@@ -1,0 +1,39 @@
+#hero {
+    @include flex-layout-column;
+    @include margin-center;
+    padding: 2%;
+    background-image: url(../images/header-slider-img-01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-family: $heading-font;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: map-get($colors, heading-1);
+        padding: 5rem;
+    }
+
+}
+
+#hero-buttons {
+    @include flex-column;
+}
+
+#hero-button {
+    @include flex-center;
+    @include margin-center;
+    text-transform: uppercase;
+    border: 2px solid white;
+    width: 10rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+
+    a {
+        color: map-get($colors, heading-1);
+        text-decoration: none;
+    }
+}
