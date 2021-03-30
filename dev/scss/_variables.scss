@@ -1,0 +1,26 @@
+//font variables
+$body-font: 'Roboto', sans-serif;
+$line-height: 1.4;
+$heading-size: 2rem;
+$text-size: 1.5rem;
+
+
+//colors
+$colors: (
+    heading-color-1: #fff,
+    heading-color-2: #244A64,
+    heading-color-3: #4F4E4E,
+    text-color: #000,
+    bg-color-1: #439BD6,
+    bg-color-2: #BDDCEF,
+    form-input-color: #BBBBBB,
+
+);
+
+//utlity varaibles
+$img-full: 100%;
+
+//media query breakpoints:
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
