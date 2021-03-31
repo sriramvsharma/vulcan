@@ -1,0 +1,86 @@
+#customized {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10rem;
+
+    h2, h3 {
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: $heading-size;
+        text-transform: uppercase;
+        color: map-get($colors, heading-3);
+        padding: 2rem 0;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding: $padding;
+        text-align: left;
+        display: block;
+        width: 40%;
+    }
+
+    p {
+        @include margin-center;
+        line-height: $line-height;
+        display: block;
+        width: 60%;
+        padding-bottom: 1.5rem;
+    }
+
+    a {
+        display: none;
+    }
+
+    .customized-item {
+        @include flex-layout-row;
+        @include margin-center;
+        width: 90%;
+
+        img {
+            display: block;
+            width: 40%;
+            @include margin-center;
+        }
+    }
+
+    .wave-dark-blue {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile){
+
+        hr {
+            display: none;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            color: map-get($colors, heading-3);
+        }
+
+        .customized-container {
+            @include flex-row;
+        }
+
+        .customized-item {
+           @include flex-layout-column;
+
+           img {
+               width: 80%;
+           }
+        }
+
+        h3 {
+            text-align: center;
+            color: map-get($colors, bg-1);
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    
+}

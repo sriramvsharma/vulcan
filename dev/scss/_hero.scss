@@ -7,6 +7,7 @@
     background-size: cover;
     min-height: 70vh;
     background-repeat: no-repeat;
+    position: relative;
 
     h1 {
         font-family: $heading-font;
@@ -15,6 +16,13 @@
         font-weight: bold;
         color: map-get($colors, heading-1);
         padding: 5rem;
+    }
+
+    .wave-white {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 }

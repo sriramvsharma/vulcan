@@ -1,0 +1,82 @@
+#product-advisor {
+    background-color: map-get($colors, heading-2);
+    
+    h2 {
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: $heading-size;
+        text-transform: uppercase;
+        text-align: center;
+        color: map-get($colors, heading-1);
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    p, label, .find-btn {
+        font-family: $heading-font;
+        text-align: center;
+        color: map-get($colors, heading-1); 
+        padding-bottom: $padding;
+    }
+
+    label {
+        font-weight: 500;
+    }
+
+    form {
+        display: block;
+        width: 95%;
+        @include margin-center;
+
+        label, select {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: .5rem 0;
+        }
+
+        .find-btn input {
+            display: block;
+            width: 100%;
+            background-color: map-get($colors, bg-1); 
+            color: map-get($colors, heading-1); ;
+            padding: .75rem;
+            text-transform: uppercase;
+            border: none;
+        }
+    }
+
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        hr {
+            width: 95%;
+        }
+
+        form {
+           @include flex-layout-row;
+
+            .form-row {
+                width: 48%;
+            }
+
+            .find-btn {
+                display: block;
+                width: 100%;
+                margin: 1.5rem 0;
+                padding: 0 .25rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-tablet){
+        form {
+            @include flex-layout-row;
+            justify-content: space-around;
+ 
+            .form-row {
+                width: 18%;
+            }
+ 
+         }
+    }
+}
