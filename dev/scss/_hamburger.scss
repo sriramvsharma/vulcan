@@ -1,14 +1,17 @@
 .navbar {
-    padding: 2% 0;
+    position:absolute;
+    left:0;
+    right:0;
+    padding: 2% 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(34, 34, 34, 0.6);
     z-index: 2;
   }
 
 .logo img {
-    width: 250px;
+    width: 150px;
     padding: 0 0.5rem;
   }
 
@@ -25,14 +28,15 @@ nav {
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;
+    text-align: left;
+    font-size: 25px;
   }
   
   nav a {
     text-decoration: none;
     display: block;
     color: white;
-    line-height: 40px;
+    line-height: 50px;
   }
   
   nav.activated {
@@ -42,14 +46,15 @@ nav {
   .show nav {
     transition: height 0.3s ease, visibility 0s;
     visibility: visible;
-    height: 253px;
+    height: 400px;
+    margin-top: 10px;
   }
   
   nav a:hover,
   nav a:active,
   nav a:focus {
     outline: none;
-    background-color: rgba(102, 102, 107, 0.3);
+    background-color: #439BD6;
   }
   /* Hamburger Styles */
   .btn-menu {
