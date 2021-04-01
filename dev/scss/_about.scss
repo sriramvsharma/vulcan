@@ -1,0 +1,46 @@
+#about-us {
+    position: relative;
+    text-align: center;
+
+    background-image: url(../images/bg-section-about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 550px;
+    background-repeat: no-repeat;
+
+    .about-text {
+        font-family: $heading-font;
+        color: map-get($colors, heading-1 );
+        width: 80%;
+        @include margin-center;
+        @include flex-layout-column;
+        padding: 20% 0;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: $line-height;
+            width: 70%;
+            @include margin-center;
+            padding: 10% 0;
+        }
+    }
+
+    a {
+        color: map-get($colors, heading-1 );
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: .5rem 1.5rem;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet){
+        .about-text {
+            width: 60%;
+            padding: 10% 0;
+        }
+    }
+}
