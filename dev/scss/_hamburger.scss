@@ -134,7 +134,7 @@ nav {
     transform: rotate(-45deg);
   }
 
-  @media (min-width: 640px) {
+  @media screen and (min-width: $breakpoint-mobile){
     .navbar {
       background-color: transparent;
     }
@@ -144,7 +144,7 @@ nav {
     }
 
     .logo img{
-        width: 250px;
+        width: 200px;
         display:block;
         margin-left: auto;
         margin-right: auto; 
@@ -156,15 +156,20 @@ nav {
   
     nav {
       display:block;
-      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
       visibility: visible;
     }
 
     nav ul {
       background-color: rgba(34, 34, 34, 0.6);
+      position: relative;
+      top:50px;
       display: flex;
       justify-content: space-around;
       padding: 0.5rem;
+      font-size: 20px;
     }
   
     nav a {
@@ -174,4 +179,15 @@ nav {
     li.navnone {
       display: none;
     }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  nav {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    visibility: visible;
+  }
+
 }
