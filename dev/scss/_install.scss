@@ -1,0 +1,96 @@
+.install {
+    position:relative;
+}
+
+#map {
+    text-align: center;
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    background-repeat: no-repeat;
+
+    .map-text{
+        font-family: $heading-font;
+        color: map-get($colors, heading-3);
+        width:60%;
+        @include margin-center;
+        @include flex-layout-column;
+        padding: 20% 0;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+
+    a {
+        color: map-get($colors, heading-3);
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid #504F4F;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+#contact {
+    text-align: center;
+    background-color: map-get($colors, heading-2);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    background-repeat: no-repeat;
+
+    .contact-text{
+        font-family: $heading-font;
+        color: map-get($colors, heading-1);
+        width:60%;
+        @include margin-center;
+        @include flex-layout-column;
+        padding: 20% 0;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+
+    a {
+        color: map-get($colors, heading-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 0.5rem 1.5rem;
+    }
+    
+}
+
+.wave-blue-light {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height:200px;
+}
+
+@media screen and (min-width: $breakpoint-tablet){
+    #map {
+        width: 50%;
+        order: 2;
+    }
+    #contact {
+        width: 50%;
+    }
+    .wave-blue-light {
+        order: 4;
+    }
+    .install {
+        position: relative;
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
