@@ -10,6 +10,10 @@
     text-transform: uppercase;
   }
 
+.icon {
+  display:none;
+}
+
 .logo img {
     width: 150px;
     padding: 0 0.5rem;
@@ -137,10 +141,35 @@ nav {
   @media screen and (min-width: $breakpoint-mobile){
     .navbar {
       background-color: transparent;
-    }
-
-    .logo { 
+      .icon{
         width: 100%;
+        visibility: visible;
+        position:absolute;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top:10px;
+        .icon_1{
+          width:30%;
+          @include flex-layout-row;
+        }
+        .icon_2{
+          width:30%;
+          @include flex-layout-row;
+        }
+
+        a{
+          text-decoration: none;
+          color:white;
+          text-transform: uppercase;
+          svg path {
+            fill: white;
+        }
+        }
+      }
+      .logo { 
+        width: 100%;
+        padding-top: 50px;
     }
 
     .logo img{
@@ -177,8 +206,13 @@ nav {
     }
 
     li.navnone {
-      display: none;
+      display:none;
     }
+    }
+
+    
+
+    
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
