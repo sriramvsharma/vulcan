@@ -13,7 +13,7 @@
     }
 
     p, label, .find-btn {
-        font-family: $heading-font;
+        font-family: $body-font;
         text-align: center;
         color: map-get($colors, heading-1); 
         padding-bottom: $padding;

@@ -8,7 +8,7 @@
         position:absolute;
         top: 150px;
         font-family: $heading-font;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
@@ -26,6 +26,7 @@
 
     #hero-buttons {
         position: absolute;
+        font-weight: 500;
         top: 400px;
         @include flex-column;
         z-index: 5;
@@ -48,9 +49,8 @@
 
     @media screen and (min-width: $breakpoint-mobile) {
         h1 {
-            top: 35%;
+            top: 15rem;
             width: 70%;
-            font-size: 2.5rem;
         }
 
         #hero-buttons {
@@ -62,6 +62,12 @@
             margin: 0 1rem;
         }
         
+    }
+
+    @media screen and (min-width: $breakpoint-tablet){
+        h1 {
+            width: 60%;
+        }
     }
 
 }

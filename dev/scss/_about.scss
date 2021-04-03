@@ -5,7 +5,7 @@
     background-image: url(../images/bg-section-about-us.jpg);
     background-size: cover;
     background-position: center;
-    max-height: 550px;
+    height: 550px;
     background-repeat: no-repeat;
 
     .about-text {
@@ -13,13 +13,14 @@
         width: 80%;
         @include margin-center;
         @include flex-layout-column;
-        padding: 20% 0;
+        padding: 6rem 0;
 
         h3 {
             font-family: $heading-font;
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             text-transform: uppercase;
+            line-height: $line-height;
         }
 
         p {
@@ -27,8 +28,12 @@
             line-height: $line-height;
             width: 70%;
             @include margin-center;
-            padding: 10% 0;
+            padding: 2rem 0;
         }
+
+        div {
+            margin-top: .5rem;
+         }
     }
 
     a {
@@ -39,10 +44,26 @@
         padding: .5rem 1.5rem;
     }
 
-    @media screen and (min-width: $breakpoint-tablet){
+    @media screen and (min-width: $breakpoint-mobile){
         .about-text {
             width: 60%;
-            padding: 10% 0;
+            padding: 6rem 0;
+
+            div {
+                margin-top: 2rem;
+             }
+        }
+
+        
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        .about-text {
+            padding: 9rem 0;
+
+            h3 {
+                padding: 0 1rem;
+            }
         }
     }
 }

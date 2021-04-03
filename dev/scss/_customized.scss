@@ -69,6 +69,7 @@
 
         .customized-item {
            @include flex-layout-column;
+           justify-content: flex-start;
 
            img {
                width: 80%;
