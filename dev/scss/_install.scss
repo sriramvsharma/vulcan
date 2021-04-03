@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
 
     .map-text{
-        font-family: $heading-font;
         color: map-get($colors, heading-3);
         width:70%;
         @include margin-center;
@@ -20,6 +19,7 @@
     }
 
     h3 {
+        font-family: $heading-font;
         font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -27,6 +27,7 @@
     }
 
     a {
+        font-family: $body-font;
         color: map-get($colors, heading-3);
         text-decoration: none;
         text-transform: uppercase;
@@ -44,7 +45,6 @@
     background-repeat: no-repeat;
 
     .contact-text{
-        font-family: $heading-font;
         color: map-get($colors, heading-1);
         width:60%;
         @include margin-center;
@@ -53,6 +53,7 @@
     }
 
     h3 {
+        font-family: $heading-font;
         font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -60,6 +61,7 @@
     }
 
     a {
+        font-family: $body-font;
         color: map-get($colors, heading-1);
         text-decoration: none;
         text-transform: uppercase;
