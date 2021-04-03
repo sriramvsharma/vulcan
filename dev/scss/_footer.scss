@@ -1,83 +1,125 @@
 footer {
-    padding-top: 30px;
     @include flex-layout-column;
     background-color: map-get($colors, bg-1);
-    color:white;
-    font-family: $body-font;
+    color: map-get($colors, heading-1);
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+
     .logo {
-        width: 100%;
-        @include flex-layout-column;
+        width: 30%;
+        padding: 1rem;
+
+        img {
+            width: 100%;
+        }
     }
-    .logo img {
-        width: 150px;
-        @include margin-center;
-    }
+
     .social_list {
         @include flex-layout-row;
-        padding-top: 20px;
+        padding: 1rem;
+
         a {
             text-decoration: none;
-            color: white;
+            color: map-get($colors, heading-1);
             text-transform: uppercase;
-            font-size: 12px;
+
+            p {
+                display: block;
+                margin: 0 .25rem;
+            }
+
+            svg {
+                margin: 0 .5rem;
+            }
+
+            svg path {
+                fill: white;
+            }
         }
-        svg path {
-            fill: white;
+
+        .social-icon-1 {
+            @include flex-layout-row;
         }
+
+        .social-icon-2 {
+            @include flex-layout-row;
+
+            a {
+                @include flex-layout-row;
+            }
+        }
+
         .copyright {
-            width:100%;
+            width: 100%;
             text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
             text-transform: uppercase;
+            padding: 1.5rem 0 0;
         }
+
     }
-    
-}
 
-@media screen and (min-width: $breakpoint-tablet) {
-    footer {
+    @media screen and (min-width: $breakpoint-mobile) {
+
         @include flex-layout-row;
-        padding-bottom: 50px;
-    
-        .logo {
-            width: 30%;
-        }
+        align-items: flex-end;
+        padding: 0 1rem 1.5rem;
 
-        .logo img {
-            width: 200px;
+        .logo {
+            width: 20%;
+            padding: .5rem 0 0;
         }
 
         .social_list {
-            @include flex-layout-row;
-            width: 60%;
-            padding-top: 50px;
-        }
-    }
-}
+            width: 70%;
+            padding: 1rem 0 0;
 
-@media screen and (min-width: $breakpoint-desktop) {
-    footer {
-        @include flex-layout-row;
-        .logo {
-            width:30%;
-        }
-
-        .social_list {
-            @include flex-layout-row;
-            width:50%;
-            padding-top: 0;
-            .social_list a {
-                padding: 0 5px;
-                font-size: 16px;
-            }
             .copyright {
-                width: 40%;
-                padding-top: 0;
-                padding-bottom: 0;
+                padding: 1rem 0 0;
             }
         }
-      
-    }
-}
 
+       
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        padding: 0 4rem 1.5rem 5rem;
+        justify-content: space-between;
+        font-size: .75rem;
+
+        .logo {
+            width: 15%;
+            padding: .5rem 0;
+        }
+
+        .social_list {
+            width: 80%;
+            padding: .5rem 0;
+
+            .social-icon-1 {
+                width: 15%;
+            }
+    
+            .copyright {
+                width: 35%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-desktop){
+            .logo {
+                width: 10%;
+            }
+
+            .social_list {
+                width: 65%;
+                padding: .5rem 0;
+    
+            }
+        }
+
+
+    }
+
+
+}
