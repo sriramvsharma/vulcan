@@ -9,7 +9,7 @@
         line-height: $line-height;
     }
 
-    input {
+    #email {
         border: none;
         width: 68%;
         padding: .5rem 0;
@@ -19,7 +19,7 @@
         padding: 0 .5rem;
     }
 
-    button {
+    #submit {
         border: none;
         background-color: map-get($colors, bg-1);
         color: map-get($colors, heading-1);
@@ -45,7 +45,7 @@
             padding: 0;
         }
 
-        input {
+        #email {
             width: 45%;
             margin-right: 1rem;
         }
