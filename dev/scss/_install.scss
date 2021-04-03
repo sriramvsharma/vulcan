@@ -74,14 +74,9 @@
     bottom: -10px;
     left: 0;
     right: 0;
-    height:200px;
+    height:80px;
 }
 
-footer {
-    position:absolute;
-    z-index: 4;
-    bottom: 20px;
-}
 @media screen and (min-width: $breakpoint-tablet){
     #map {
         width: 50%;

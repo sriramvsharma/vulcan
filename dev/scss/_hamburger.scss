@@ -8,6 +8,7 @@
     justify-content: space-between;
     background-color: rgba(34, 34, 34, 0.6);
     z-index: 2;
+    text-transform: uppercase;
   }
 
 .logo img {
@@ -181,7 +182,7 @@ nav {
     }
 }
 
-@media screen and (min-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-desktop) {
   nav {
     display:block;
     margin-left: auto;

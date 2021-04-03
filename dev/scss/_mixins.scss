@@ -10,7 +10,8 @@
 //mixin for creating a flex row of evenly spaced elements
 @mixin flex-layout-row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }

@@ -1,7 +1,82 @@
-footer ul {
-    list-style: none;
+footer {
+    padding-top: 30px;
+    @include flex-layout-column;
+    background-color: map-get($colors, bg-1);
+    color:white;
+    .logo {
+        width: 100%;
+        @include flex-layout-column;
+    }
+    .logo img {
+        width: 150px;
+        @include margin-center;
+    }
+    .social_list {
+        @include flex-layout-row;
+        padding-top: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        svg path {
+            fill: white;
+        }
+        .copyright {
+            width:100%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+    }
+    
 }
 
-footer img {
-    width: 200px;
+@media screen and (min-width: $breakpoint-tablet) {
+    footer {
+        @include flex-layout-row;
+        padding-bottom: 50px;
+    
+        .logo {
+            width: 30%;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .social_list {
+            @include flex-layout-row;
+            width: 60%;
+            padding-top: 50px;
+        }
+    }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+    footer {
+        @include flex-layout-row;
+        .logo {
+            width:30%;
+        }
+
+        .social_list {
+            @include flex-layout-row;
+            width:50%;
+            padding-top: 0;
+            .social_list a {
+                padding: 0 5px;
+                font-size: 16px;
+            }
+            .copyright {
+                width: 40%;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+      
+    }
+}
+
