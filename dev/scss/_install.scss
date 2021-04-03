@@ -13,7 +13,7 @@
     .map-text{
         font-family: $heading-font;
         color: map-get($colors, heading-3);
-        width:60%;
+        width:70%;
         @include margin-center;
         @include flex-layout-column;
         padding: 20% 0;

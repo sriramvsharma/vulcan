@@ -17,7 +17,7 @@ footer {
 
     .social_list {
         @include flex-layout-row;
-        padding: 1rem;
+        padding-top: 1rem;
 
         a {
             text-decoration: none;
@@ -47,6 +47,7 @@ footer {
 
             a {
                 @include flex-layout-row;
+                font-size: 12px;
             }
         }
 
@@ -55,11 +56,12 @@ footer {
             text-align: center;
             text-transform: uppercase;
             padding: 1.5rem 0 0;
+            font-size: 16px;
         }
 
     }
 
-    @media screen and (min-width: $breakpoint-mobile) {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
 
         @include flex-layout-row;
         align-items: flex-end;
@@ -71,19 +73,18 @@ footer {
         }
 
         .social_list {
-            width: 70%;
+            width: 55%;
             padding: 1rem 0 0;
 
             .copyright {
                 padding: 1rem 0 0;
             }
         }
-
-       
     }
 
-    @media screen and (min-width: $breakpoint-tablet) {
-        padding: 0 4rem 1.5rem 5rem;
+    @media screen and (min-width: $breakpoint-desktop) {
+        @include flex-layout-row;
+        padding: 0 3rem 1.5rem 3rem;
         justify-content: space-between;
         font-size: .75rem;
 
@@ -93,8 +94,13 @@ footer {
         }
 
         .social_list {
-            width: 80%;
-            padding: .5rem 0;
+            width: 60%;
+            min-width:660px;
+            padding-top: 1.5rem;
+
+            p {
+                font-size: 12px;
+            }
 
             .social-icon-1 {
                 width: 15%;
@@ -105,21 +111,7 @@ footer {
                 padding: 0;
             }
         }
-
-        @media screen and (min-width: $breakpoint-desktop){
-            .logo {
-                width: 10%;
-            }
-
-            .social_list {
-                width: 65%;
-                padding: .5rem 0;
-    
-            }
-        }
-
-
     }
-
-
 }
+
+
