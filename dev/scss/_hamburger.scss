@@ -4,9 +4,9 @@
     right:0;
     padding: 2% 2%;
     @include flex-layout-row;
-    background-color: rgba(34, 34, 34, 0.6);
+    background-color: rgba(34, 34, 34, 0.75);
     font-family: $body-font;
-    z-index: 2;
+    z-index: 10;
     text-transform: uppercase;
   }
 
@@ -163,7 +163,7 @@ nav {
     }
 
     nav ul {
-      background-color: rgba(34, 34, 34, 0.6);
+      background-color: rgba(34, 34, 34, 0.75);
       position: relative;
       top:50px;
       display: flex;
