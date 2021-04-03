@@ -164,10 +164,13 @@ nav {
           min-width: 320px;
           padding-right: 50px;
           @include flex-layout-row;
-          p {
-            display: block;
-            margin: 0 .25rem;
-        }
+          a {
+            @include flex-layout-row;
+            p {
+              display: block;
+              margin: 0 .25rem;
+          }
+          }
         }
 
         a{
@@ -244,6 +247,13 @@ nav {
         min-width: 320px;
         padding-right: 50px;
         @include flex-layout-row;
+        a {
+          @include flex-layout-row;
+          p {
+            display: block;
+            margin: 0 .25rem;
+        }
+        }
       }
 
       a{
