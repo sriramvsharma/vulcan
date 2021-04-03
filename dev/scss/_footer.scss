@@ -3,6 +3,7 @@ footer {
     @include flex-layout-column;
     background-color: map-get($colors, bg-1);
     color:white;
+    font-family: $body-font;
     .logo {
         width: 100%;
         @include flex-layout-column;

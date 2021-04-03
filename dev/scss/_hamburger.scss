@@ -3,10 +3,9 @@
     left:0;
     right:0;
     padding: 2% 2%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flex-layout-row;
     background-color: rgba(34, 34, 34, 0.6);
+    font-family: $body-font;
     z-index: 2;
     text-transform: uppercase;
   }
