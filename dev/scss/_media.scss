@@ -1,12 +1,10 @@
 #media {
     background-color: map-get($colors, bg-1);
+    padding: 5% 12%;
 
-    div {
-        @include margin-center;
-        width: 60%;
-        position: relative;
-        padding: 40% 0 0 0;
+    .embed-border {
+       border: 10px solid rgba(0, 0, 0, 0.5);
     }
 
-
+    
 }
