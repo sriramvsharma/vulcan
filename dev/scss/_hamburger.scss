@@ -2,18 +2,21 @@
     position:absolute;
     left:0;
     right:0;
-    padding: 2% 2%;
+    padding: 2% 4% 0 0;
     font-family: $body-font;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(34, 34, 34, 0.6);
     z-index: 10;
+    max-width: 120rem;
     text-transform: uppercase;
   }
 
 .icon {
   display:none;
+  font-size: 14px;
+
 }
 
 .logo img {
@@ -162,13 +165,13 @@ nav {
         .icon_2{
           width:20%;
           min-width: 320px;
-          padding-right: 70px;
+          padding-right: 20px;
           @include flex-layout-row;
           a {
             @include flex-layout-row;
             p {
               display: block;
-              margin: 0 .25rem;
+              margin: 0 .25rem 0 .5rem;
           }
           }
         }
@@ -209,7 +212,7 @@ nav {
     nav ul {
       background-color: rgba(34, 34, 34, 0.6);
       position: relative;
-      top:50px;
+      top:10px;
       display: flex;
       justify-content: space-around;
       padding: .25rem 1rem;
@@ -229,13 +232,18 @@ nav {
 @media screen and (min-width: $breakpoint-desktop) {
   .navbar {
     background-color: transparent;
-    .icon{
-      width: 100%;
+    width: 95%;
+    max-width: 110rem;
+    @include margin-center;
+   
+    .icon{      
       visibility: visible;
       position:absolute;
       display:flex;
       flex-direction: row;
       justify-content: space-between;
+      align-self: center;
+      
       top:10px;
       .icon_1{
         width:20%;
@@ -245,7 +253,7 @@ nav {
       .icon_2{
         width:20%;
         min-width: 320px;
-        padding-right: 70px;
+        padding-right: 20px;
         @include flex-layout-row;
         a {
           @include flex-layout-row;
@@ -292,7 +300,7 @@ nav {
   nav ul {
     background-color: rgba(34, 34, 34, 0.6);
     position: relative;
-    top:50px;
+    top:10px;
     display: flex;
     justify-content: space-around;
     padding: .25rem 1rem;

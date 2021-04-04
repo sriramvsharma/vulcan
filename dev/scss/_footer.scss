@@ -7,7 +7,7 @@ footer {
     padding-bottom: 1.5rem;
 
     .logo {
-        width: 30%;
+        // width: 30%;
         padding: 1rem;
 
         img {
@@ -16,7 +16,7 @@ footer {
     }
 
     .social_list {
-        @include flex-layout-row;
+        @include flex-layout-row-evenly;
         padding-top: 1rem;
 
         a {
@@ -26,11 +26,11 @@ footer {
 
             p {
                 display: block;
-                margin: 0 .25rem;
+                margin: 0 .1rem;
             }
 
             svg {
-                margin: 0 .5rem;
+                margin: 0 .25rem;
             }
 
             svg path {
@@ -47,7 +47,7 @@ footer {
 
             a {
                 @include flex-layout-row;
-                font-size: 16px;
+                font-size: 12px;
             }
         }
 
@@ -74,7 +74,12 @@ footer {
 
         .social_list {
             width: 55%;
-            padding: 1rem 0 0;
+            padding: 1rem 5rem 0 0;
+
+            p {
+                font-size: 12px;
+                margin: 0 1rem;
+            }
 
             .copyright {
                 padding: 1rem 0 0;
@@ -98,20 +103,21 @@ footer {
         
 
         .social_list {
-            width: 60%;
+            width: 45%;
             min-width:660px;
-            padding-top: 1.5rem;
+            padding: 1.5rem 10rem 0 0;
 
             p {
                 font-size: 12px;
+                margin: 0 1rem;
             }
 
             .social-icon-1 {
-                width: 15%;
+                width: 10%;
             }
     
             .copyright {
-                width: 35%;
+                width: 40%;
                 padding: 0;
             }
         }

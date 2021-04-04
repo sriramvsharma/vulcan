@@ -16,6 +16,14 @@
     flex-wrap: wrap;
 }
 
+@mixin flex-layout-row-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 @mixin flex-layout-column {
     display: flex;
     flex-direction: column;

@@ -20,7 +20,9 @@
     }
 
     label {
+        font-size: .9rem;
         font-weight: 500;
+        text-transform: uppercase;
     }
 
     form {
@@ -53,7 +55,32 @@
             position: relative;
         }
 
+        .select-wrapper-1 {
+            position: relative;
+            select {
+                padding: .5rem .25rem;
+                background-color: map-get($colors, heading-1);
+                color: map-get($colors, heading-3);
+                position: relative;
+                -webkit-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+            }
+        }
+
         .select-wrapper:after {
+            position: absolute;
+            content: '▾';
+            font-size: 1.5rem;
+            color: map-get($colors, heading-3);
+            top: 3px;
+            right: 23px;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+          }
+
+          .select-wrapper-1:after {
             position: absolute;
             content: '▾';
             font-size: 1.5rem;
@@ -104,7 +131,7 @@
                 padding: 0 .25rem;
             }
 
-            .select-wrapper:after {
+            .select-wrapper:after, .select-wrapper-1:after {
                 color: map-get($colors, bg-1);
               }
         }
