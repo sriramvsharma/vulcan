@@ -55,11 +55,27 @@
             position: relative;
         }
 
+        .select-wrapper-1 {
+            position: relative;
+        }
+
         .select-wrapper:after {
             position: absolute;
             content: '▾';
             font-size: 1.5rem;
             color: map-get($colors, heading-3);
+            top: 3px;
+            right: 23px;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+          }
+
+          .select-wrapper-1:after {
+            position: absolute;
+            content: '▾';
+            font-size: 1.5rem;
+            color: map-get($colors, heading-1);
             top: 3px;
             right: 23px;
             width: 0;
