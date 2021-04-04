@@ -131,7 +131,7 @@
                 padding: 0 .25rem;
             }
 
-            .select-wrapper:after {
+            .select-wrapper:after, .select-wrapper-1:after {
                 color: map-get($colors, bg-1);
               }
         }
