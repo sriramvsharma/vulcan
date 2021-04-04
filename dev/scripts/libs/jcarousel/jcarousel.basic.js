@@ -27,7 +27,3 @@
             });
     });
 })(jQuery);
-
-// $(window).on('load',function(){
-//     $('.jcarousel').jcarousel('reload');
-//     });

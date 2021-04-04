@@ -57,4 +57,11 @@
             @include margin-center;
         }
     }
+
+    @media screen and (min-width: $breakpoint-desktop){
+       p {
+           font-size: 1.4rem;
+           width: 100%;
+       }
+    }
 }

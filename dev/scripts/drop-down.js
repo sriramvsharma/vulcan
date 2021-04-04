@@ -24,19 +24,6 @@ function openMenu() {
     nav.classList.add('activated');
 }
 
-// const mql = window.matchMedia('(min-width: 560px)');
-
-
-// mql.addEventListener(removeTransition);
-
-
-// function removeTransition(e) {
-
-//     if (e.matches) {
-//         body.classList.remove('show');
-//         nav.classList.remove('activated');
-//     }
-// }
 
 
 
