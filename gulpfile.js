@@ -149,7 +149,7 @@ function htmlTask(){
 function imagesTask(){
   return src(files.images)
 		.pipe(cache(imageMin({interlaced: true}))) // Compresses images
-		.pipe(dest(folders.imagesDistFolder)); // Copies compressed images to the dist images folder
+		.pipe(dest(folders.imagesDist)); // Copies compressed images to the dist images folder
 }
 
 // Fonts Task:
