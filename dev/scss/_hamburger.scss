@@ -14,9 +14,8 @@
 
 .icon {
   display:none;
-  max-width: 120rem;
   font-size: 14px;
-  align-items:center;
+
 }
 
 .logo img {
@@ -241,6 +240,8 @@ nav {
       display:flex;
       flex-direction: row;
       justify-content: space-between;
+      max-width: 120rem;
+      
       top:10px;
       .icon_1{
         width:20%;
@@ -250,7 +251,7 @@ nav {
       .icon_2{
         width:20%;
         min-width: 320px;
-        padding-right: 70px;
+        padding-right: 20px;
         @include flex-layout-row;
         a {
           @include flex-layout-row;
