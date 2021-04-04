@@ -57,6 +57,15 @@
 
         .select-wrapper-1 {
             position: relative;
+            select {
+                padding: .5rem .25rem;
+                background-color: map-get($colors, heading-1);
+                color: map-get($colors, heading-3);
+                position: relative;
+                -webkit-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+            }
         }
 
         .select-wrapper:after {
@@ -75,7 +84,7 @@
             position: absolute;
             content: '▾';
             font-size: 1.5rem;
-            color: map-get($colors, heading-1);
+            color: map-get($colors, heading-3);
             top: 3px;
             right: 23px;
             width: 0;
