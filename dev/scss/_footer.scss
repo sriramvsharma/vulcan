@@ -74,7 +74,12 @@ footer {
 
         .social_list {
             width: 55%;
-            padding: 1rem 0 0;
+            padding: 1rem 5rem 0 0;
+
+            p {
+                font-size: 12px;
+                margin: 0 1rem;
+            }
 
             .copyright {
                 padding: 1rem 0 0;
@@ -98,20 +103,21 @@ footer {
         
 
         .social_list {
-            width: 60%;
+            width: 45%;
             min-width:660px;
-            padding-top: 1.5rem;
+            padding: 1.5rem 10rem 0 0;
 
             p {
                 font-size: 12px;
+                margin: 0 1rem;
             }
 
             .social-icon-1 {
-                width: 15%;
+                width: 10%;
             }
     
             .copyright {
-                width: 35%;
+                width: 40%;
                 padding: 0;
             }
         }
